@@ -1,0 +1,124 @@
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body{
+    background-color:#86b8b1;
+    font-family: 'Righteous', cursive;  
+}
+header{
+    background-color:#fa2a00e7;
+    padding: 2%;
+    margin: -8px;
+}
+header img{
+    width: 4%;
+    height: 4%;
+}
+#cabecalho-titulo{
+    color: rgb(228, 225, 225);
+    margin-left: 85%;
+    font-size: 22px;
+}
+div img{
+    width: 9.73rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+}
+#conteudo{
+    text-align: center;
+    margin-top: 3%;
+    background-color: #fa2a00da;
+    color: rgb(228, 225, 225);
+    padding: 5%;
+    margin-inline: 30%;
+    border-radius: 3rem;
+}
+#botao{
+    height: 3rem;
+    width: 7rem;
+    border-radius: 2rem;
+    border-style: none;
+    font-family: 'Righteous', cursive;
+}
+
+@media (max-width: 767px) {
+    div.imagem_pessoa {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    div.imagem_pessoa img {
+      width: calc(25% - 10px);
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 0.5rem;
+    }
+  }
+  
+  
+/* Estilos para telas grandes */
+@media (min-width: 1024px) {
+   
+    header img {
+      width: 4%;
+      height: 4%;
+    }
+  
+    #cabecalho-titulo {
+      margin-left: 85%;
+    }
+  
+    div.img_pessoa img {
+      width: 9.73rem;
+      height: 10rem;
+    }
+  
+    #conteudo {
+      margin-inline: 30%;
+    }
+  }
+  
+  /* Estilos para telas médias */
+  @media (max-width: 1023px) {
+    header img {
+      width: 6%;
+      height: 6%;
+    }
+  
+    #cabecalho-titulo {
+      margin-left: 80%;
+    }
+  
+    div.img_pessoa img {
+      width: 7.73rem;
+      height: 8rem;
+    }
+  
+    #conteudo {
+      margin-inline: 20%;
+    }
+  }
+  
+  /* Estilos para telas pequenas */
+  @media (max-width: 767px) {
+    header{
+        padding: 5%;
+    }
+    header img {
+      width: 8%;
+      height: 8%;
+    }
+  
+    #cabecalho-titulo {
+      margin-left: 55%;
+    }
+  
+    div.img_pessoa img {
+      width: 6.73rem;
+      height: 7rem;
+    }
+  
+    #conteudo {
+      margin-inline: 10%;
+    }
+  }
+  
