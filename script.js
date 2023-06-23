@@ -34,8 +34,10 @@ function init(){
       }      
     });
     bernardo.addEventListener('targerLost', event => {
+      if(contador==0){
       alert('Errado!')
       alert('Nova dica: Blond hair');
+      }
     })
   
     enzo.addEventListener("targetFound", event => {
