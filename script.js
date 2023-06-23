@@ -111,17 +111,17 @@ function init(){
 
 function errou (){
   if(contador == 1){
+    console.log(contador)
     alert('Não é essa pessoa, tente novamente!!!');
     alert('Nova dica: Uso óculos')
-    init();
   }else if(contador == 2){
     alert('Não é essa pessoa, tente novamente!!!');
     alert('Nova dica: Não posso abrir a boca perto do Jhon Ribs');
-    init();
+    console.log(contador)
   }else if(contador == 3){
     alert('Não é essa pessoa, tente novamente!!!');
     alert('Nova Dica: O nerd mais zueiro possível');
-    init();
+    console.log(contador)
   }
 } 
  
