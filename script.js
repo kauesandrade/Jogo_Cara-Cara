@@ -23,11 +23,8 @@ function init(){
           alert('Dica: Como goleiro eu sou uma ótima pessoa, bolas foras é minha melhor especialidade');
       contador++;
       }else{
-        alert('Não é essa pessoa, tente novamente!!!');
-        alert('Nova dica: Uso óculos')
+       errou();
       }
-     
-         
   });
 
   enzo.addEventListener("targetFound", event => {
@@ -37,8 +34,7 @@ function init(){
         alert('Dica: Ele já tem um lugar no céu reservado!')
       contador = 2;
       }else{
-        alert('Não é essa pessoa, tente novamente!!!');
-        alert('Nova dica: Não posso abrir a boca perto do Jhon Ribs')
+        errou();
       }         
   });
 
@@ -49,8 +45,7 @@ function init(){
           alert('Dica: Se lerdisse fosse um prêmio, eu já tinha alguns ')
       contador++;
       }else{
-        alert('Não é essa pessoa, tente novamente!!!');
-        alert('Nova Dica: O nerd mais zueiro possível')
+        errou();
       }         
   });
 
@@ -113,5 +108,21 @@ function init(){
       }         
   });
 }
+
+function errou (){
+  if(contador == 1){
+    alert('Não é essa pessoa, tente novamente!!!');
+    alert('Nova dica: Uso óculos')
+    init();
+  }else if(contador == 2){
+    alert('Não é essa pessoa, tente novamente!!!');
+    alert('Nova dica: Não posso abrir a boca perto do Jhon Ribs');
+    init();
+  }else if(contador == 3){
+    alert('Não é essa pessoa, tente novamente!!!');
+    alert('Nova Dica: O nerd mais zueiro possível');
+    init();
+  }
+} 
  
 init();
