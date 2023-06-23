@@ -1,4 +1,4 @@
-let contador = 1;
+let contador = 0;
 
 function init(){
   let bernardo = document.getElementById('bernardo');
@@ -110,15 +110,15 @@ function init(){
 }
 
 function errou (){
-  if(contador == 1){
+  if(contador == 0){
     console.log(contador)
     alert('Não é essa pessoa, tente novamente!!!');
     alert('Nova dica: Uso óculos')
-  }else if(contador == 2){
+  }else if(contador == 1){
     alert('Não é essa pessoa, tente novamente!!!');
     alert('Nova dica: Não posso abrir a boca perto do Jhon Ribs');
     console.log(contador)
-  }else if(contador == 3){
+  }else if(contador == 2){
     alert('Não é essa pessoa, tente novamente!!!');
     alert('Nova Dica: O nerd mais zueiro possível');
     console.log(contador)
