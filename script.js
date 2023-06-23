@@ -1,6 +1,6 @@
+let contador = 0;
+
 function init(){
-  
-  let contador = 0;
   let bernardo = document.getElementById('bernardo');
   let enzo = document.getElementById('enzo');
   let gabrielB = document.getElementById('gabrielB');
