@@ -1,4 +1,4 @@
-let contador = 0;
+let contador = 1;
 
 function init(){
   let bernardo = document.getElementById('bernardo');
