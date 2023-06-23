@@ -9,7 +9,16 @@ function init(){
     let leticia = document.getElementById('leticia');
     let kevin = document.getElementById('kevin');
     let joao = document.getElementById('joao');
-  
+
+    let daniel = document.getElementById('daniel');
+    let gabrielL = document.getElementById('gabrielL');  
+    let kaue = document.getElementById('kaue');
+    let karol = document.getElementById('karol');
+    let joaoS = document.getElementById('joaoS');
+    let yasmin = document.getElementById('yasmin');
+    let stefany = document.getElementById('stefany');
+    let victor = document.getElementById('victor');
+    let nicolas = document.getElementById('nicolas');
   
   
     
@@ -17,30 +26,31 @@ function init(){
     
     
     bernardo.addEventListener("targetFound", event => {
-        if(contador == 0){
-            alert('Você acertou!!! Era o nosso famosa calvo palmerense, Bernardo');
-            alert('Proxima pessoa!!');
-            alert('Dica: Como goleiro eu sou uma ótima pessoa, bolas foras é minha melhor especialidade');
+      if(contador == 0){
+        alert('Você acertou!!! Era o nosso famosa calvo palmerense, Bernardo');
+        alert('Proxima pessoa!!');
+        alert('Dica: Como goleiro eu sou uma ótima pessoa, bolas foras é minha melhor especialidade');
         contador++;
-        }else{
-          alert('Não é essa pessoa, tente novamente!!!');
-          alert('Nova dica: Uso óculos')
-        }
-       
-           
+      }      
     });
+    bernardo.addEventListener('targerLost', event => {
+      alert('Errado!')
+      alert('Nova dica: Blond hair');
+    })
   
     enzo.addEventListener("targetFound", event => {
-        if(contador == 1){
-          alert('Isso mesmo, nosso querido último romântico(literalmente) o homi da bicicleta elétrica!');
-          alert('Próxima Pessoa!!')
-          alert('Dica: Ele já tem um lugar no céu reservado!')
-        contador = 2;
-        }else{
-          alert('Não é essa pessoa, tente novamente!!!');
-          alert('Nova dica: Não posso abrir a boca perto do Jhon Ribs')
-        }         
+      if(contador == 1){
+        alert('Isso mesmo, nosso querido último romântico(literalmente) o homi da bicicleta elétrica!');
+        alert('Próxima Pessoa!!')
+        alert('Dica: Ele já tem um lugar no céu reservado!')
+        contador++;
+      }        
     });
+
+    enzo.addEventListener('targetLost', event =>{
+      alert('Não é essa pessoa, tente novamente!!!');
+      alert('Nova dica: Não posso abrir a boca perto do Jhon Ribs')
+    })
   
    gabrielB.addEventListener("targetFound", event => {
         if(contador == 2){
@@ -48,11 +58,15 @@ function init(){
             alert('Próxima Pessoa!!')
             alert('Dica: Se lerdisse fosse um prêmio, eu já tinha alguns ')
         contador++;
-        }else{
-          alert('Não é essa pessoa, tente novamente!!!');
-          alert('Nova Dica: O nerd mais zueiro possível')
-        }         
+        }        
     });
+    gabrielB.addEventListener('targetLost', event =>{
+    
+      alert('Não é essa pessoa, tente novamente!!!');
+      alert('Nova Dica: O nerd mais zueiro possível')
+      
+
+    })
   
     leticia.addEventListener("targetFound", event => {
         if(contador == 3){
@@ -60,11 +74,15 @@ function init(){
             alert('Próxima Pessoa!!')
             alert('Dica: A pessoa que da mais bolas foras no mundo')
         contador++;
-        }else{
-          alert('Não é essa pessoa, tente novamente!!!');
-          alert('Nova dica: Hoje tem acadzinha!');
-        }         
+        }        
       });
+
+      leticia.addEventListener('targetLost', event =>{
+
+        alert('Não é essa pessoa, tente novamente!!!');
+        alert('Nova dica: Hoje tem acadzinha!');
+        
+      })
   
     kevin.addEventListener("targetFound", event => {
         if(contador == 4){
@@ -72,11 +90,15 @@ function init(){
             alert('Próxima Pessoa!!')
             alert('Dica: Detesto pobres! ')
             contador++;
-        }else{
-          alert('Não é essa pessoa, tente novamente!!!');
-          alert('Nova dica: Nova dica: O maior imã de carros e provavelmente o que irá de Americanas primeiro se continuar andar de bike ');
-        }         
+        }        
     });
+
+    kevin.addEventListener('targetLost', event =>{
+
+      alert('Não é essa pessoa, tente novamente!!!');
+      alert('Nova dica: Nova dica: O maior imã de carros e provavelmente o que irá de Americanas primeiro se continuar andar de bike ');
+      
+    })
     
     luana.addEventListener("targetFound", event => {
         if(contador == 5){
@@ -84,11 +106,15 @@ function init(){
             alert('Próxima Pessoa!!')
             alert('Dica: Seria um ótimo atleta!')
         contador++;
-        }else{
-          alert('Não é essa pessoa, tente novamente!!!');
-          alert('Nova dica: Verde e Marrom andam lado a lado ');
-        }         
+        }        
     });
+
+    luana.addEventListener('targetLost', event =>{
+      
+      alert('Não é essa pessoa, tente novamente!!!');
+      alert('Nova dica: Verde e Marrom andam lado a lado ');
+      
+    })
   
     mathias.addEventListener("targetFound", event => {
         if(contador == 6){
@@ -96,22 +122,30 @@ function init(){
             alert('Próxima Pessoa!!')
             alert('Dica: Ando sempre com minha pequena amiguinha ')
         contador++;
-        }else{
-          alert('Não é essa pessoa, tente novamente!!!');
-          alert('Nova dica: Não tenho filtro algúm ');
         }         
     });
+
+    mathias.addEventListener('targetLost', event =>{
+      
+      alert('Não é essa pessoa, tente novamente!!!');
+      alert('Nova dica: Não tenho filtro algúm ');
+      
+    })
   
     joao.addEventListener("targetFound", event => {
         if(contador == 7){
             alert('Você acertou!!! Era o nosso Herdeiro João Winter!');
             alert('Parabéns, você conseguiu completar nossa pequeno joguinho!!! tome um biscoito 🍪 !!!')
         contador++;
-        }else{
-          alert('Não é essa pessoa, tente novamente!!!');
-          alert('Nova dica: Calado é um poeta ');
-        }         
+        }        
     });
+
+    joao.addEventListener('targetLost', event =>{
+      
+      alert('Não é essa pessoa, tente novamente!!!');
+      alert('Nova dica: Calado é um poeta ');
+      
+    })
 }
    
 init();
