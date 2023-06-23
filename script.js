@@ -29,7 +29,6 @@ function init(){
   bernardo.addEventListener("targetFound", event => {
       if(contador == 0){
           alert('Você acertou!!! Era o nosso famosa calvo palmerense, Bernardo');
-          alert('Proxima pessoa!!');
           alert('Dica: Como goleiro eu sou uma ótima pessoa, bolas foras é minha melhor especialidade');
       contador++;
       }else{
@@ -40,7 +39,6 @@ function init(){
   enzo.addEventListener("targetFound", event => {
       if(contador == 1){
         alert('Isso mesmo, nosso querido último romântico(literalmente) o homi da bicicleta elétrica!');
-        alert('Próxima Pessoa!!')
         alert('Dica: Ele já tem um lugar no céu reservado!')
       contador = 2;
       }else{
@@ -51,7 +49,6 @@ function init(){
  gabrielB.addEventListener("targetFound", event => {
       if(contador == 2){
           alert('Você acertou!!! Era o nosso famoso Big Mind, seu lugar no céu já está garantido por aturar Winter por tanto tempo!');
-          alert('Próxima Pessoa!!')
           alert('Dica: Se lerdisse fosse um prêmio, eu já tinha alguns ')
       contador++;
       }else{
@@ -62,7 +59,6 @@ function init(){
   leticia.addEventListener("targetFound", event => {
       if(contador == 3){
           alert('Você acertou!!! Era a nossa lerdinha, a Letícia ');
-          alert('Próxima Pessoa!!')
           alert('Dica: A pessoa que da mais bolas foras no mundo')
       contador++;
       }else{
@@ -73,7 +69,6 @@ function init(){
   kevin.addEventListener("targetFound", event => {
       if(contador == 4){
           alert('Você acertou!!! Era o cara mais lindo de Marte, Kevinho');
-          alert('Próxima Pessoa!!')
           alert('Dica: Detesto pobres! ')
           contador++;
       }else{
@@ -84,7 +79,6 @@ function init(){
   luana.addEventListener("targetFound", event => {
       if(contador == 5){
           alert('Você acertou!!! Era a nossa odeia pobres, Luaninha');
-          alert('Próxima Pessoa!!')
           alert('Dica: Seria um ótimo atleta!')
       contador++;
       }else{
@@ -95,7 +89,6 @@ function init(){
   mathias.addEventListener("targetFound", event => {
       if(contador == 6){
           alert('Você acertou!!! Era o melhor jogador das paralimpíadas, Mathias');
-          alert('Próxima Pessoa!!')
           alert('Dica: Ando sempre com minha pequena amiguinha ')
       contador++;
       }else{
@@ -157,7 +150,7 @@ function errou (){
     alert('Nova dica: Hoje tem acadzinha!');
   }else if(contador == 4){
     alert('Não é essa pessoa, tente novamente!!!');
-    alert('Nova dica: Nova dica: O maior imã de carros e provavelmente o que irá de Americanas primeiro se continuar andar de bike ');
+    alert('Nova dica: O maior imã de carros e provavelmente o que irá de Americanas primeiro se continuar andar de bike ');
   }else if(contador == 5){
     alert('Não é essa pessoa, tente novamente!!!');
     alert('Nova dica: Verde e Marrom andam lado a lado ');
