@@ -112,7 +112,7 @@ function init(){
 function errou (){
   if(contador == 0){
     console.log(contador)
-    alert('Não é essa pessoa, tente novamente!!!');
+    alert('Não é essa pessoa, tente novamente!!!'+contador);
     alert('Nova dica: Uso óculos')
   }else if(contador == 1){
     alert('Não é essa pessoa, tente novamente!!!');
