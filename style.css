@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 body{
     background-color:#86b8b1;
     font-family: 'Righteous', cursive;  
@@ -21,6 +21,9 @@ div img{
     width: 9.73rem;
     height: 10rem;
     border-radius: 0.5rem;
+}
+.imagem_pessoa{
+  margin-left: 1.8rem;
 }
 #conteudo{
     text-align: center;
@@ -53,51 +56,6 @@ div img{
       border-radius: 0.5rem;
     }
   }
-  
-  
-/* Estilos para telas grandes */
-@media (min-width: 1024px) {
-   
-    header img {
-      width: 4%;
-      height: 4%;
-    }
-  
-    #cabecalho-titulo {
-      margin-left: 85%;
-    }
-  
-    div.img_pessoa img {
-      width: 9.73rem;
-      height: 10rem;
-    }
-  
-    #conteudo {
-      margin-inline: 30%;
-    }
-  }
-  
-  /* Estilos para telas médias */
-  @media (max-width: 1023px) {
-    header img {
-      width: 6%;
-      height: 6%;
-    }
-  
-    #cabecalho-titulo {
-      margin-left: 80%;
-    }
-  
-    div.img_pessoa img {
-      width: 7.73rem;
-      height: 8rem;
-    }
-  
-    #conteudo {
-      margin-inline: 20%;
-    }
-  }
-  
   /* Estilos para telas pequenas */
   @media (max-width: 767px) {
     header{
@@ -109,16 +67,17 @@ div img{
     }
   
     #cabecalho-titulo {
-      margin-left: 55%;
+      margin-left: 52%;
     }
   
     div.img_pessoa img {
       width: 6.73rem;
       height: 7rem;
     }
-  
+    .imagem_pessoa{
+      margin-right: 1.3rem;
+    }
     #conteudo {
       margin-inline: 10%;
     }
   }
-  

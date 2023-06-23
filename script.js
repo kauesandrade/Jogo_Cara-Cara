@@ -10,6 +10,16 @@ function init(){
   let kevin = document.getElementById('kevin');
   let joao = document.getElementById('joao');
 
+  let daniel = document.getElementById('daniel');
+  let gabrielL = document.getElementById('gabrielL');  
+  let kaue = document.getElementById('kaue');
+  let karol = document.getElementById('karol');
+  let joaoS = document.getElementById('joaoS');
+  let yasmin = document.getElementById('yasmin');
+  let stefany = document.getElementById('stefany');
+  let victor = document.getElementById('victor');
+  let nicolas = document.getElementById('nicolas');
+
 
 
   
@@ -56,8 +66,7 @@ function init(){
           alert('Dica: A pessoa que da mais bolas foras no mundo')
       contador++;
       }else{
-        alert('Não é essa pessoa, tente novamente!!!');
-        alert('Nova dica: Hoje tem acadzinha!');
+       errou();
       }         
     });
 
@@ -68,8 +77,7 @@ function init(){
           alert('Dica: Detesto pobres! ')
           contador++;
       }else{
-        alert('Não é essa pessoa, tente novamente!!!');
-        alert('Nova dica: Nova dica: O maior imã de carros e provavelmente o que irá de Americanas primeiro se continuar andar de bike ');
+        errou();
       }         
   });
   
@@ -80,8 +88,7 @@ function init(){
           alert('Dica: Seria um ótimo atleta!')
       contador++;
       }else{
-        alert('Não é essa pessoa, tente novamente!!!');
-        alert('Nova dica: Verde e Marrom andam lado a lado ');
+       errou();
       }         
   });
 
@@ -92,8 +99,7 @@ function init(){
           alert('Dica: Ando sempre com minha pequena amiguinha ')
       contador++;
       }else{
-        alert('Não é essa pessoa, tente novamente!!!');
-        alert('Nova dica: Não tenho filtro algúm ');
+        errou();
       }         
   });
 
@@ -103,25 +109,64 @@ function init(){
           alert('Parabéns, você conseguiu completar nossa pequeno joguinho!!! tome um biscoito 🍪 !!!')
       contador++;
       }else{
-        alert('Não é essa pessoa, tente novamente!!!');
-        alert('Nova dica: Calado é um poeta ');
+        errou();
       }         
   });
 }
+daniel.addEventListener("targetFound", event => {
+  errou();
+});
+nicolas.addEventListener("targetFound", event => {
+  errou();
+});
+gabrielL.addEventListener("targetFound", event => {
+  errou();
+});
+kaue.addEventListener("targetFound", event => {
+  errou();
+});
+karol.addEventListener("targetFound", event => {
+  errou();
+});
+joaoS.addEventListener("targetFound", event => {
+  errou();
+});
+yasmin.addEventListener("targetFound", event => {
+  errou();
+});
+stefany.addEventListener("targetFound", event => {
+  errou();
+});
+victor.addEventListener("targetFound", event => {
+  errou();
+});
+
 
 function errou (){
   if(contador == 0){
-    console.log(contador)
-    alert('Não é essa pessoa, tente novamente!!!'+contador);
+    alert('Não é essa pessoa, tente novamente!!!');
     alert('Nova dica: Uso óculos')
   }else if(contador == 1){
     alert('Não é essa pessoa, tente novamente!!!');
     alert('Nova dica: Não posso abrir a boca perto do Jhon Ribs');
-    console.log(contador)
   }else if(contador == 2){
     alert('Não é essa pessoa, tente novamente!!!');
     alert('Nova Dica: O nerd mais zueiro possível');
-    console.log(contador)
+  }else if(contador == 3){
+    alert('Não é essa pessoa, tente novamente!!!');
+    alert('Nova dica: Hoje tem acadzinha!');
+  }else if(contador == 4){
+    alert('Não é essa pessoa, tente novamente!!!');
+    alert('Nova dica: Nova dica: O maior imã de carros e provavelmente o que irá de Americanas primeiro se continuar andar de bike ');
+  }else if(contador == 5){
+    alert('Não é essa pessoa, tente novamente!!!');
+    alert('Nova dica: Verde e Marrom andam lado a lado ');
+  }else if(contador == 6){
+    alert('Não é essa pessoa, tente novamente!!!');
+    alert('Nova dica: Não tenho filtro algúm ');
+  }else if(contador == 7){
+    alert('Não é essa pessoa, tente novamente!!!');
+    alert('Nova dica: Calado é um poeta ');
   }
 } 
  
